@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Resume</title>
+    <style>
+      /* Default Light Theme */
+:root {
+    --bg-color: #ffffff;
+    --text-color: #333;
+    --primary-color: #007bff;
+}
+
+/* Dark Theme */
+.dark-theme {
+    --bg-color: #333;
+    --text-color: #ffffff;
+    --primary-color: #ff9500;
+}
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: all 0.3s ease-in-out;
+    text-align: center;
+}
+
+header {
+    padding: 20px;
+}
+/* Profile Picture */
+#profile-pic {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto 10px;
+}
+ul {
+    list-style: none;
+
+}
+button {
+    padding: 10px;
+    background-color: var(--primary-color);
+    border: none;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+/* Portfolio Section */
+.project img {
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+    </style>
+    
+</head>
+<body>
+  <header>
+    <img src="download.png" alt="Profile Picture" id="profile-pic">
+    <h1>Your Name</h1>
+    <p>Web Developer | Designer | Innovator</p>
+    <button onclick="toggleTheme()">Switch Theme</button>
+</header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>A passionate developer with experience in front-end and back-end technologies.</p>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>HTML, CSS, JavaScript</li>
+            <li>React, Node.js</li>
+            <li>UI/UX Design</li>
+        </ul>
+    </section>
+
+    <section id="experience">
+        <h2>Experience</h2>
+        <p>Software Engineer at XYZ Company (2022 - Present)</p>
+    </section>
+
+    <section id="education">
+        <h2>Education</h2>
+        <p>Bachelor’s in Computer Science</p>
+    </section>
+
+    <section id="portfolio">
+        <h2>Portfolio</h2>
+        <div class="project">
+            <img src="photo.jpeg" alt="Project 1">
+            <p>Project Title & Description</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>Contact: yourname@example.com | LinkedIn | GitHub</p>
+    </footer>
+
+    <script>
+      function toggleTheme() {
+    document.body.classList.toggle("dark-theme");
+}
+
+    </script>
+</body>
+</html>
